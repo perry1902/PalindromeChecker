@@ -17,21 +17,35 @@ public void setup()
 }
 public boolean palindrome(String word)
 {
-  if (word.equals(reverse(word)))
+   String halp= new String ("");
+   for (int i=0; i<word.length(); i++)
+   {
+    if (Character.isLetter(word.charAt(i)))
+    {
+      halp= halp + word.substring(i,i+1);
+
+    }
+   }
+   halp.toLowerCase();
+  if (halp.toLowerCase().equals(reverse(halp.toLowerCase())));
     return true;
   else 
     return false;
 
 
 }
-public String reverse(String str)
+public String reverse(String noSpaces)
 {
     String sNew = new String("");
-    for (int i=str.length()-1; i>=0; i--)
-      sNew=sNew + str.substring(i,i+1);
-    String reverse= sNew;
-    return reverse;
+   
+    for (int i=noSpaces.length()-1; i>=0; i--)
+    {
+      sNew=sNew + noSpaces.substring(i,i+1);
+  }
+ return sNew;
+  }
 
-}
+
+
 
 
