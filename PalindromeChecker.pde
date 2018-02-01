@@ -26,10 +26,10 @@ public boolean palindrome(String word)
 
     }
    }
-   halp.toLowerCase();
-  if (halp.toLowerCase().equals(reverse(halp.toLowerCase())));
+   //halp.toLowerCase();
+  if (halp.toLowerCase().equals(reverse(halp.toLowerCase())))
     return true;
-  else 
+ else
     return false;
 
 
